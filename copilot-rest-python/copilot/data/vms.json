@@ -1,0 +1,37 @@
+[
+    {
+        "size": "D2v3",
+        "vcpu": 2,
+        "memory": 8.0
+    },
+    {
+        "size": "D4v3",
+        "vcpu": 4,
+        "memory": 16.0
+    },
+    {
+        "size": "D8v3",
+        "vcpu": 8,
+        "memory": 32.0
+    },
+    {
+        "size": "D16v3",
+        "vcpu": 16,
+        "memory": 64.0
+    },
+    {
+        "size": "D32v3",
+        "vcpu": 32,
+        "memory": 128.0
+    },
+    {
+        "size": "D64v3",
+        "vcpu": 64,
+        "memory": 256.0
+    },
+    {
+        "size": "D128v3",
+        "vcpu": 128,
+        "memory": 512.0
+    }
+]
