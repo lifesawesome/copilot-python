@@ -1,0 +1,21 @@
+{
+  "github.copilot.chat.codeGeneration.instructions": [
+  {
+    "file": "copilot-rest-python/code-std.md"
+  }
+  ],
+  "python.testing.unittestArgs": [
+    "-v",
+    "-s",
+    "./copilot-rest-python",
+    "-p",
+    "*test.py"
+  ],
+  "python.testing.pytestEnabled": false,
+  "python.testing.unittestEnabled": true,
+  "github.copilot.advanced": {
+
+
+  }
+}
+    

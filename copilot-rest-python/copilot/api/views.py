@@ -27,9 +27,22 @@ def get_azure_vms(request):
     with open('./data/vms.json', 'r', encoding='utf-8') as f:
         data = json.load(f)
     return JsonResponse(data, safe=False, status=status.HTTP_200_OK)
+
 # CREATE A NEW VIEW THAT RETURNS THE CONTENT OF home.html
 @api_view(['GET'])
 def about(request):
     with open('./data/vms.json', 'r', encoding='utf-8') as f:
         vms = json.load(f)
     return render(request, 'home.html', {'vms': vms})
+
+
+
+
+
+
+
+
+
+
+
+

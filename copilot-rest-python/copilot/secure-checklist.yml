@@ -1,0 +1,90 @@
+OWASP_Top_10:
+  - A01:2021-Broken Access Control:
+      description: "Access control enforces policy such that users cannot act outside of their intended permissions."
+      items:
+        - "Bypassing access control checks by modifying the URL, internal application state, or the HTML page."
+        - "Allowing the primary key to be changed to another user's record."
+        - "Elevating privileges by acting as a user without being logged in or acting as an admin when logged in as a user."
+        - "Metadata manipulation, such as replays, tampering, or forging tokens."
+        - "CORS misconfiguration allowing unauthorized API access."
+
+  - A02:2021-Cryptographic Failures:
+      description: "Cryptographic failures occur when sensitive data is not properly protected."
+      items:
+        - "Transmitting data in clear text."
+        - "Using outdated or weak cryptographic algorithms."
+        - "Storing passwords in plain text."
+        - "Improperly implementing encryption or decryption processes."
+        - "Exposing sensitive data in logs or error messages."
+
+  - A03:2021-Injection:
+      description: "Injection flaws occur when untrusted data is sent to an interpreter as part of a command or query."
+      items:
+        - "SQL injection."
+        - "NoSQL injection."
+        - "OS command injection."
+        - "LDAP injection."
+        - "Expression Language injection."
+
+  - A04:2021-Insecure Design:
+      description: "Insecure design is a broad category representing different weaknesses, expressed as 'missing or ineffective control design.'"
+      items:
+        - "Lack of business logic security controls."
+        - "Insecure design patterns."
+        - "Failure to use secure design principles."
+        - "Lack of threat modeling."
+        - "Inadequate security requirements."
+
+  - A05:2021-Security Misconfiguration:
+      description: "Security misconfiguration is the most common issue in web application security."
+      items:
+        - "Default configurations."
+        - "Incomplete or ad-hoc configurations."
+        - "Unnecessary features enabled."
+        - "Verbose error messages."
+        - "Misconfigured security headers."
+
+  - A06:2021-Vulnerable and Outdated Components:
+      description: "Using components with known vulnerabilities may undermine application defenses."
+      items:
+        - "Using outdated libraries or frameworks."
+        - "Not performing regular updates."
+        - "Failing to scan for vulnerabilities."
+        - "Using unsupported software."
+        - "Not verifying the integrity of components."
+
+  - A07:2021-Identification and Authentication Failures:
+      description: "Failures in identification and authentication can lead to unauthorized access."
+      items:
+        - "Weak password policies."
+        - "Credential stuffing."
+        - "Brute force attacks."
+        - "Session fixation."
+        - "Insecure password recovery mechanisms."
+
+  - A08:2021-Software and Data Integrity Failures:
+      description: "Software and data integrity failures relate to code and infrastructure that does not protect against integrity violations."
+      items:
+        - "Insecure CI/CD pipelines."
+        - "Untrusted software updates."
+        - "Insecure deserialization."
+        - "Tampering with data."
+        - "Lack of digital signatures."
+
+  - A09:2021-Security Logging and Monitoring Failures:
+      description: "Insufficient logging and monitoring can lead to undetected security breaches."
+      items:
+        - "Lack of logging for security events."
+        - "Inadequate log retention."
+        - "Failure to monitor logs."
+        - "No alerting mechanisms."
+        - "Inadequate response to detected issues."
+
+  - A10:2021-Server-Side Request Forgery (SSRF):
+      description: "SSRF flaws occur when a web application is fetching a remote resource without validating the user-supplied URL."
+      items:
+        - "Allowing user input to control the destination of a network request."
+        - "Not validating or sanitizing URLs."
+        - "Allowing requests to internal services."
+        - "Exposing sensitive information through error messages."
+        - "Lack of proper access controls for internal resources."

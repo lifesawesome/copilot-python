@@ -1,0 +1,41 @@
+{
+    "classes": "PascalCase",
+    "functions": "snake_case",
+    "variables": "camelCase",
+    "constants": "UPPERCASE_WITH_UNDERSCORES",
+    "comments": {
+      "style": "numpydoc",
+      "inline_comments": "lowercase_start",
+      "block_comments": "sentence_case"
+    },
+    "docstrings": {
+      "style": "google",
+      "description_first": true,
+      "param_format": {
+        "name_case": "snake_case",
+        "description_capitalization": "sentence_case"
+      }
+    },
+    "line_length": 80,
+    "indentation": "spaces",
+    "spaces_per_indent": 4,
+    "file_naming": {
+      "python": "snake_case",
+      "javascript": "camelCase",
+      "java": "PascalCase"
+    },
+    "error_handling": {
+      "require_try_except": true,
+      "log_exceptions": true
+    },
+    "imports": {
+      "order": ["standard", "third_party", "local"],
+      "style": "absolute",
+      "newline_between_groups": true
+    },
+    "test_naming": {
+      "unit_tests": "test_<function_name>",
+      "integration_tests": "integration_<function_name>"
+    }
+  }
+  

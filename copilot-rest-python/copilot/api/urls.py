@@ -7,6 +7,7 @@ urlpatterns = [
     path('hello/', views.get_hello),
     path('azure/vms/', views.get_azure_vms),
     path('about/', views.about),
+    
 ]
 
 
